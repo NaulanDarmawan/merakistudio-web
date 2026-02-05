@@ -1,1 +1,16 @@
 @import "tailwindcss";
+
+@theme {
+  /* Menambahkan font custom ke Tailwind 4 (jika pakai v4) */
+  --font-serif: "Playfair Display", "Times New Roman", serif;
+  --font-sans: "Inter", "Helvetica Neue", sans-serif;
+}
+
+/* Scrollbar hide utility (optional) */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

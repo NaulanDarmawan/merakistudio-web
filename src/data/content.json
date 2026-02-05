@@ -1,0 +1,44 @@
+{
+  "hero": {
+    "title": "We Craft Digital Magic",
+    "subtitle": "Meraki Studio — A creative sanctuary where imagination meets interaction.",
+    "cta": "Explore Works"
+  },
+  "about": {
+    "title": "Not Just a Studio.",
+    "description": "Kami adalah laboratorium imajinasi. Menggabungkan seni visual dengan teknologi interaktif untuk menciptakan pengalaman yang tak terlupakan.",
+    "stats": [
+      { "label": "Projects", "value": "20+" },
+      { "label": "Happy Clients", "value": "15" },
+      { "label": "Years", "value": "2" }
+    ]
+  },
+  "works": [
+    {
+      "id": 1,
+      "title": "Stone Guardian",
+      "category": "RPG Game",
+      "image": "game1.jpeg",
+      "description": "Sebuah petualangan epik di dunia di mana bebatuan memiliki nyawa."
+    },
+    {
+      "id": 2,
+      "title": "Jelly Builders",
+      "category": "Puzzle Mobile",
+      "image": "game2.jpeg",
+      "description": "Susun jelly setinggi mungkin dalam game fisika yang menggemaskan ini."
+    },
+    {
+      "id": 3,
+      "title": "Space Candy",
+      "category": "Animation",
+      "image": "anim1.jpeg",
+      "description": "Iklan komersial penuh warna dengan gaya animasi klasik."
+    }
+  ],
+  "contact": {
+    "title": "Let's Collaborate",
+    "email": "hello@merakistudio.id",
+    "location": "Malang, Indonesia"
+  }
+}
