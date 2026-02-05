@@ -34,6 +34,20 @@
       "category": "Animation",
       "image": "anim1.jpeg",
       "description": "Iklan komersial penuh warna dengan gaya animasi klasik."
+    },
+    {
+      "id": 4,
+      "title": "Space Candy",
+      "category": "Animation",
+      "image": "anim1.jpeg",
+      "description": "Iklan komersial penuh warna dengan gaya animasi klasik."
+    },
+    {
+      "id": 5,
+      "title": "Space Candy",
+      "category": "Animation",
+      "image": "anim1.jpeg",
+      "description": "Iklan komersial penuh warna dengan gaya animasi klasik."
     }
   ],
   "contact": {

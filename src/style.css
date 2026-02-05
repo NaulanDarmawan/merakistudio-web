@@ -1,12 +1,31 @@
 @import "tailwindcss";
 
 @theme {
-  /* Menambahkan font custom ke Tailwind 4 (jika pakai v4) */
-  --font-serif: "Playfair Display", "Times New Roman", serif;
-  --font-sans: "Inter", "Helvetica Neue", sans-serif;
+  /* Palet Warna Cute Gaming */
+  --color-game-pink: #FF9ebb;
+  --color-game-purple: #A78BFA;
+  --color-game-blue: #67E8F9;
+  --color-game-yellow: #FDE047;
+  --color-game-dark: #2D1B4E; /* Ungu sangat tua untuk teks agar kontras */
+  --color-game-light: #FFF5F7; /* Putih agak pink untuk background netral */
+
+  /* Font yang lebih playful dan bulat */
+  --font-sans: "Nunito", "Segoe UI Emoji", sans-serif;
+
+  /* Custom Utilities untuk efek gaming */
+  --shadow-game-card: 0 -10px 30px -5px rgba(45, 27, 78, 0.1);
 }
 
-/* Scrollbar hide utility (optional) */
+/* Base styles */
+body {
+    @apply text-game-dark bg-game-light font-sans;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    @apply font-extrabold tracking-tight;
+}
+
+/* Utility untuk menyembunyikan scrollbar tapi tetap bisa scroll */
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
