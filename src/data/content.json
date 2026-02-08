@@ -6,23 +6,23 @@
   },
   "about": {
     "title": "OUR DNA",
-    "subtitle": "We Are Dream Weavers",
-    "description": "Di Meraki Studio, animasi bukan sekadar gambar bergerak. Itu adalah bahasa universal. Kami menggabungkan seni tradisional dengan teknologi masa depan untuk menciptakan dunia yang belum pernah Anda lihat sebelumnya.",
+    "subtitle": "Dream Weavers",
+    "description": "Di Meraki Studio, animasi adalah bahasa universal. Kami memadukan seni gambar tangan dengan teknologi untuk menciptakan karakter yang bernapas dan cerita yang hidup.",
     "features": [
       {
         "icon": "fa-pen-nib",
-        "title": "Handcrafted",
-        "desc": "Setiap sketsa dimulai dari goresan tangan penuh rasa."
+        "title": "Artistry",
+        "desc": "Goresan tangan penuh rasa."
       },
       {
         "icon": "fa-film",
         "title": "Cinematic",
-        "desc": "Penyutradaraan visual layaknya film layar lebar."
+        "desc": "Visual layaknya layar lebar."
       },
       {
         "icon": "fa-heart",
         "title": "Soulful",
-        "desc": "Karakter yang bernapas, berekspresi, dan terasa hidup."
+        "desc": "Karakter yang punya nyawa."
       }
     ]
   },

@@ -4,45 +4,48 @@ defineProps(['data'])
 </script>
 
 <template>
-  <ParallaxSection bgColor="bg-game-yellow" textColor="text-game-dark" :fitContent="true">
+  <ParallaxSection bgColor="bg-game-yellow" textColor="text-game-dark" :compact="true">
 
-    <div class="grid md:grid-cols-2 gap-12 md:gap-20 items-center max-w-6xl mx-auto">
+    <div class="max-w-6xl mx-auto w-full">
 
-        <div class="text-center md:text-left space-y-6">
-            <div class="inline-flex items-center gap-2 px-4 py-2 bg-white rounded-full border-2 border-game-dark shadow-[4px_4px_0_#2D1B4E]">
-                <i class="fa-solid fa-clapperboard text-game-pink"></i>
-                <span class="text-xs font-black uppercase tracking-widest text-game-dark">{{ data.title }}</span>
+        <div class="grid md:grid-cols-12 gap-8 items-center">
+
+            <div class="md:col-span-3 text-center md:text-left">
+                <div class="inline-block px-3 py-1 bg-white border-2 border-game-dark rounded-full text-[10px] font-black uppercase tracking-widest mb-3 shadow-[2px_2px_0_#2D1B4E]">
+                    {{ data.title }}
+                </div>
+                <h2 class="text-3xl md:text-4xl font-black text-game-dark leading-none">
+                    {{ data.subtitle }}
+                </h2>
             </div>
 
-            <h2 class="text-4xl md:text-6xl font-black text-game-dark leading-tight">
-                {{ data.subtitle }}
-            </h2>
+            <div class="md:col-span-5">
+                <p class="text-base md:text-lg font-bold text-game-dark/80 leading-relaxed font-sans border-l-4 border-game-dark/10 pl-4 md:pl-6">
+                    {{ data.description }}
+                </p>
+            </div>
 
-            <p class="text-lg md:text-xl font-bold opacity-80 leading-relaxed text-game-dark/80 font-sans">
-                {{ data.description }}
-            </p>
-        </div>
+            <div class="md:col-span-4 flex flex-col gap-3">
+                <div v-for="(feat, index) in data.features" :key="index"
+                     class="flex items-center gap-4 p-3 bg-white/40 rounded-xl border border-game-dark/5 hover:bg-white hover:shadow-md transition-all duration-300">
 
-        <div class="grid gap-6">
-            <div v-for="(feat, index) in data.features" :key="index"
-                 class="group flex items-start gap-5 p-5 bg-white/50 hover:bg-white rounded-2xl border-2 border-game-dark/5 hover:border-game-dark transition-all duration-300 hover:-translate-y-1 hover:shadow-[6px_6px_0_#2D1B4E]">
+                    <div class="w-10 h-10 rounded-lg bg-game-dark text-white flex items-center justify-center text-lg shrink-0">
+                        <i :class="['fa-solid', feat.icon]"></i>
+                    </div>
 
-                <div class="shrink-0 w-12 h-12 md:w-14 md:h-14 bg-game-dark text-white rounded-xl flex items-center justify-center text-xl md:text-2xl group-hover:scale-110 group-hover:rotate-6 transition duration-300 shadow-md">
-                    <i :class="['fa-solid', feat.icon]"></i>
-                </div>
-
-                <div>
-                    <h3 class="text-lg md:text-xl font-black uppercase tracking-wide text-game-dark mb-1">
-                        {{ feat.title }}
-                    </h3>
-                    <p class="text-sm md:text-base font-bold opacity-60 leading-tight">
-                        {{ feat.desc }}
-                    </p>
+                    <div>
+                        <h4 class="text-sm font-black uppercase text-game-dark leading-none mb-0.5">
+                            {{ feat.title }}
+                        </h4>
+                        <p class="text-xs font-bold opacity-60 leading-tight">
+                            {{ feat.desc }}
+                        </p>
+                    </div>
                 </div>
             </div>
+
         </div>
 
     </div>
-
   </ParallaxSection>
 </template>
