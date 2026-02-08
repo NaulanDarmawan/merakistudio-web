@@ -3,8 +3,8 @@ defineProps({
   bgColor: { type: String, default: 'bg-game-light' },
   textColor: { type: String, default: 'text-game-dark' },
   roundedTop: { type: String, default: 'rounded-t-[50px] md:rounded-t-[80px]' },
-  // Prop baru: Jika true, tinggi section mengikuti konten
-  autoHeight: { type: Boolean, default: false }
+  // Prop baru: Jika true, tinggi background menyesuaikan konten (bukan full layar)
+  fitContent: { type: Boolean, default: false }
 })
 </script>
 
@@ -15,12 +15,14 @@ defineProps({
       bgColor,
       textColor,
       roundedTop,
-      // Logic: Kalau autoHeight true, pakai 'min-h-[60vh] h-fit'. Kalau false, tetap 'h-screen'.
-      autoHeight ? 'min-h-[60vh] h-fit pb-20' : 'h-screen'
+      // LOGIC: Kalau fitContent, pakai h-auto & padding besar. Kalau tidak, h-screen.
+      fitContent ? 'h-auto min-h-[50vh] py-20' : 'h-screen'
     ]"
   >
-    <div class="container mx-auto px-6 md:px-12 relative z-10 flex flex-col justify-center pt-16"
-         :class="{ 'h-full': !autoHeight }"> <div class="relative z-20">
+    <div class="container mx-auto px-6 md:px-12 relative z-10 flex flex-col justify-center"
+         :class="{ 'h-full': !fitContent }">
+
+      <div class="relative z-20">
           <slot />
       </div>
 

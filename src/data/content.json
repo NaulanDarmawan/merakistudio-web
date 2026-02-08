@@ -5,11 +5,25 @@
     "cta": "Explore Works"
   },
   "about": {
-    "title": "Simplicity is Key.",
-    "description": "Kami membuat game & website yang menyenangkan. Tidak rumit, hanya karya yang menyentuh hati.",
-    "stats": [
-      { "label": "Projects", "value": "20+" },
-      { "label": "Happiness", "value": "100%" }
+    "title": "OUR DNA",
+    "subtitle": "We Are Dream Weavers",
+    "description": "Di Meraki Studio, animasi bukan sekadar gambar bergerak. Itu adalah bahasa universal. Kami menggabungkan seni tradisional dengan teknologi masa depan untuk menciptakan dunia yang belum pernah Anda lihat sebelumnya.",
+    "features": [
+      {
+        "icon": "fa-pen-nib",
+        "title": "Handcrafted",
+        "desc": "Setiap sketsa dimulai dari goresan tangan penuh rasa."
+      },
+      {
+        "icon": "fa-film",
+        "title": "Cinematic",
+        "desc": "Penyutradaraan visual layaknya film layar lebar."
+      },
+      {
+        "icon": "fa-heart",
+        "title": "Soulful",
+        "desc": "Karakter yang bernapas, berekspresi, dan terasa hidup."
+      }
     ]
   },
   "works": [
