@@ -5,12 +5,11 @@
     "cta": "Explore Works"
   },
   "about": {
-    "title": "Not Just a Studio.",
-    "description": "Kami adalah laboratorium imajinasi. Menggabungkan seni visual dengan teknologi interaktif untuk menciptakan pengalaman yang tak terlupakan.",
+    "title": "Simplicity is Key.",
+    "description": "Kami membuat game & website yang menyenangkan. Tidak rumit, hanya karya yang menyentuh hati.",
     "stats": [
       { "label": "Projects", "value": "20+" },
-      { "label": "Happy Clients", "value": "15" },
-      { "label": "Years", "value": "2" }
+      { "label": "Happiness", "value": "100%" }
     ]
   },
   "works": [
